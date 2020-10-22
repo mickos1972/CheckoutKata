@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30523.141
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckoutKata", "CheckoutKata\CheckoutKata.csproj", "{D3F42A94-47C2-4FF3-A9B9-BA1F66890FC4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CheckoutKata", "CheckoutKata\CheckoutKata.csproj", "{D3F42A94-47C2-4FF3-A9B9-BA1F66890FC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KataLibrary", "KataLibrary\KataLibrary.csproj", "{F4109311-D225-4076-8F7D-0987B027341D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{2EA4C30E-89AE-4B40-B883-AC3DB81424B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{D3F42A94-47C2-4FF3-A9B9-BA1F66890FC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3F42A94-47C2-4FF3-A9B9-BA1F66890FC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3F42A94-47C2-4FF3-A9B9-BA1F66890FC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4109311-D225-4076-8F7D-0987B027341D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4109311-D225-4076-8F7D-0987B027341D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4109311-D225-4076-8F7D-0987B027341D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4109311-D225-4076-8F7D-0987B027341D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EA4C30E-89AE-4B40-B883-AC3DB81424B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EA4C30E-89AE-4B40-B883-AC3DB81424B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EA4C30E-89AE-4B40-B883-AC3DB81424B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EA4C30E-89AE-4B40-B883-AC3DB81424B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
