@@ -18,6 +18,7 @@ namespace CheckoutKata
                 .AddTransient<IPopulateCart, PopulateCart>()
                 .AddTransient<IDoSomeShopping, DoSomeShopping>()
                 .AddTransient<IFakeDataAccess, FakeDataAccess>()
+                .AddTransient<IBillingEngine, BillingEngine>()
                 .BuildServiceProvider();
 
             //Get Stock from the fake database
