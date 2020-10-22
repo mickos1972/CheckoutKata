@@ -15,11 +15,12 @@ namespace CheckoutKata
         public DoSomeShopping(IPopulateCart populateCart)
         {
             _populateCart = populateCart;
-
         }
 
+        //This is where the program flow is controlled.
         public void LetsGoToMorrisons(Dictionary<string, ItemModel> stock)
         {
+            //These write lines i'd put in a messages class so we'd have them all in one place.
             Console.WriteLine("Please select an item to add to the basket (A,B,C,D) press x to calculate total");
 
             _populateCart.ScanItems(_cart, stock);

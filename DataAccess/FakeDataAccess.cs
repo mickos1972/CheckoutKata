@@ -4,6 +4,7 @@ using KataLibrary;
 
 namespace DataAccess
 {
+    //this could be a real DAL but i just put a few items in for stock.
     public class FakeDataAccess : IFakeDataAccess
     {
         public Dictionary<string, ItemModel> GetStockFromDataBase()
