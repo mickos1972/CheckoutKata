@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace KataLibrary
 
@@ -14,7 +15,7 @@ namespace KataLibrary
 
         public decimal GenerateTotal()
         {
-            return 0;
+            return Items.Sum(itemModel => itemModel.UnitPrice);
         }
     }
 }

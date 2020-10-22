@@ -11,7 +11,7 @@ namespace CheckoutKata
             //Read the input and populate the cart
             var input = "";
 
-            Console.WriteLine("Please select an item to add to the basket (A,B,C,D) press x to calculate total");
+            //Console.WriteLine("Please select an item to add to the basket (A,B,C,D) press x to calculate total");
 
             while (input != "x")
             {
