@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using CheckoutKata.Interfaces;
 using DataAccess;
 using KataLibrary;
+using KataLibrary.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace CheckoutKata
@@ -18,6 +19,7 @@ namespace CheckoutKata
                 .AddTransient<IPopulateCart, PopulateCart>()
                 .AddTransient<IDoSomeShopping, DoSomeShopping>()
                 .AddTransient<IFakeDataAccess, FakeDataAccess>()
+                .AddTransient<IShoppingCartModel, ShoppingCartModel>()
                 .BuildServiceProvider();
 
             //Get Stock from the fake database

@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
 using KataLibrary;
+using KataLibrary.Interfaces;
 
 namespace CheckoutKata
 {
     public interface IPopulateCart
     {
-        void ScanItems(ShoppingCartModel cart, Dictionary<string, ItemModel> Stock);
+        void ScanItems(IShoppingCartModel cart, Dictionary<string, ItemModel> Stock);
     }
 }
