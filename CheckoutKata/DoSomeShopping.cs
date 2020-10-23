@@ -20,13 +20,12 @@ namespace CheckoutKata
         //This is where the program flow is controlled.
         public void LetsGoToMorrisons(Dictionary<string, ItemModel> stock)
         {
-            //These write lines i'd put in a messages class so we'd have them all in one place.
-            Console.WriteLine("Please select an item to add to the basket (A,B,C,D) press x to calculate total");
+            StandardMessages.PleaseEnterSelectionText();
 
             _populateCart.ScanItems(_cart, stock);
             var total = _cart.GenerateTotal();
 
-            Console.WriteLine($"The Total is : {total}");
+            StandardMessages.TotalMessage(total);
         }
     }
 }

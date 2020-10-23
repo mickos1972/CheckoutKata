@@ -10,6 +10,7 @@ namespace KataLibrary
 
         public void AddItem(ItemModel item)
         {
+            
             Items.Add(item);
         }
 

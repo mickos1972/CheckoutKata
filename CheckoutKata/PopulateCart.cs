@@ -18,8 +18,13 @@ namespace CheckoutKata
                 input = Console.ReadLine().ToLower();
 
                 //I know! dont judge me!
-                if(input == "a" || input == "b" || input == "c" || input == "d")
-                    cart.AddItem(Stock[input]);
+                if (input == "a" || input == "b" || input == "c" || input == "d")
+                {
+                    var item = Stock[input];
+
+                    StandardMessages.YouHaveAdded(item);
+                    cart.AddItem(item);
+                }
             } 
         }
     }
