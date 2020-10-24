@@ -7,6 +7,6 @@ namespace CheckoutKata.Interfaces
 {
     interface IDoSomeShopping
     {
-        void LetsGoToMorrisons(Dictionary<string, ItemModel> stock);
+        void LetsGoToMorrisons(Dictionary<string, ItemModel> stock, List<Rule> rules);
     }
 }

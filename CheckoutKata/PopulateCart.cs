@@ -7,7 +7,7 @@ namespace CheckoutKata
 {
     public class PopulateCart : IPopulateCart
     {
-        public void ScanItems(IShoppingCartModel cart, Dictionary<string, ItemModel> Stock)
+        public void ScanItems(IShoppingCart cart, Dictionary<string, ItemModel> Stock)
         {
             //Read the input and populate the cart
             var input = "";

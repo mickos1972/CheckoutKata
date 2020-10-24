@@ -5,7 +5,7 @@ namespace KataLibrary
 {
     public class PopulateCart : IPopulateCart
     {
-        public void ScanItems(ShoppingCartModel cart, Dictionary<string, ItemModel> Stock)
+        public void ScanItems(ShoppingCart cart, Dictionary<string, ItemModel> Stock)
         {
             //Read the input and populate the cart
             var input = "";

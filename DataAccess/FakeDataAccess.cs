@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Reflection.Metadata.Ecma335;
 using KataLibrary;
 
 namespace DataAccess
@@ -11,10 +12,21 @@ namespace DataAccess
         {
             return new Dictionary<string, ItemModel>
             {
-                { "a", new ItemModel { ItemName = "Cereal", UnitPrice = 3.63M }},
-                { "b", new ItemModel { ItemName = "Milk", UnitPrice = 2.95M }},
-                { "c", new ItemModel { ItemName = "Strawberries", UnitPrice = 7.51M }},
-                { "d", new ItemModel { ItemName = "Blueberries", UnitPrice = 8.84M }}
+                { "a", new ItemModel { ItemDescription = "Cereal", UnitPrice = 3.63M, ItemRule = "a" }},
+                { "b", new ItemModel { ItemDescription = "Milk", UnitPrice = 2.95M, ItemRule = "b" }},
+                { "c", new ItemModel { ItemDescription = "Strawberries", UnitPrice = 7.51M, ItemRule = "c" }},
+                { "d", new ItemModel { ItemDescription = "Blueberries", UnitPrice = 8.84M, ItemRule = "d" }}
+            };
+        }
+        
+        public List<Rule> GetRules()
+        {
+            return new List<Rule>
+            {
+                new Rule { ItemCount=3, RuleName="a", Total=10M},
+                new Rule { ItemCount=3, RuleName="b", Total=20M},
+                new Rule { ItemCount=3, RuleName="c", Total=30M},
+                new Rule { ItemCount=3, RuleName="d", Total=40M},
             };
         }
     }

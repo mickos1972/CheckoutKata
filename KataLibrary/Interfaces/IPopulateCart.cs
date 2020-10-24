@@ -4,6 +4,6 @@ namespace KataLibrary
 {
     public interface IPopulateCart
     {
-        void ScanItems(ShoppingCartModel cart, Dictionary<string, ItemModel> Stock);
+        void ScanItems(ShoppingCart cart, Dictionary<string, ItemModel> Stock);
     }
 }

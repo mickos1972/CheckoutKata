@@ -6,5 +6,6 @@ namespace DataAccess
     public interface IFakeDataAccess
     {
         Dictionary<string, ItemModel> GetStockFromDataBase();
+        List<Rule> GetRules();
     }
 }

@@ -1,10 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
+
 namespace KataLibrary.Interfaces
 {
-    public class IShoppingCart
+    public interface IShoppingCart
     {
-        public IShoppingCart()
-        {
-        }
+        List<ItemModel> Items { get; set; }
+        void AddItem(ItemModel item);
+        decimal GenerateTotal(List<Rule> rules);
     }
 }

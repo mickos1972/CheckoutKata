@@ -6,6 +6,6 @@ namespace CheckoutKata
 {
     public interface IPopulateCart
     {
-        void ScanItems(IShoppingCartModel cart, Dictionary<string, ItemModel> Stock);
+        void ScanItems(IShoppingCart cart, Dictionary<string, ItemModel> Stock);
     }
 }

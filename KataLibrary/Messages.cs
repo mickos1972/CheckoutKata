@@ -16,7 +16,7 @@ namespace KataLibrary
 
         public static void YouHaveAdded(ItemModel item)
         {
-            Console.WriteLine($"You have added : {item.ItemName} costing {item.UnitPrice}");
+            Console.WriteLine($"You have added : {item.ItemDescription} costing {item.UnitPrice}");
         }
     }
 }
